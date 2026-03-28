@@ -1,0 +1,439 @@
+You are a senior backend and frontend software architect.
+
+Generate a **technical Product Requirements Document (PRD)** for building a **shoe e-commerce website**.
+
+This document is strictly for engineers. Avoid marketing language and focus only on implementation details.
+
+Project Technology Stack:
+
+Frontend
+
+* Next.js (latest version)
+* TypeScript
+* TailwindCSS
+* Axios for API communication
+
+Backend
+
+* Python Flask
+* REST API architecture
+* SQLAlchemy ORM
+* JWT Authentication
+
+Database
+
+* PostgreSQL
+* External database connection string will be provided
+
+Deployment
+
+Backend
+
+* Hosted on PythonAnywhere
+* Flask WSGI configuration
+
+Frontend
+
+* Deployed separately (e.g., Vercel or Node server)
+
+Payments
+
+* No Stripe
+* UPI payment flow
+* Payment confirmation handled manually or through UPI reference verification
+
+Do NOT include Docker or containerization.
+
+The PRD must contain the following sections.
+
+---
+
+# 1. System Architecture
+
+Explain the architecture including:
+
+* Frontend (Next.js client)
+* Flask REST API server
+* PostgreSQL database
+* Image storage for product images
+
+Explain the request flow between frontend, backend, and database.
+
+Example flow:
+
+User → Next.js Frontend → Flask API → PostgreSQL Database → Response → Frontend UI
+
+Also explain:
+
+* Authentication flow
+* Order creation flow
+* Payment verification flow
+
+---
+
+# 2. Frontend Architecture (Next.js)
+
+Define the folder structure.
+
+Example structure:
+
+/app
+/components
+/lib/api
+/types
+/hooks
+/styles
+/context
+/utils
+
+Define key **User Panel pages**:
+
+Homepage
+Product listing page
+Product detail page
+Cart page
+Checkout page
+Login page
+Register page
+User dashboard
+Orders page
+Order details page
+Profile settings page
+Wishlist page (optional)
+
+Define **Admin Panel pages**:
+
+Admin login
+Admin dashboard
+Product management page
+Add/Edit product page
+Order management page
+Payment verification page
+Inventory management page
+Customer management page
+
+Explain:
+
+* API client layer using Axios
+* State management (React Context / Zustand / Redux)
+* Form handling (React Hook Form)
+* Cart persistence (localStorage + backend sync)
+* Route protection for admin and authenticated users
+
+---
+
+# 3. Backend Architecture (Flask)
+
+Define the backend project structure.
+
+Example:
+
+/app
+  /routes
+  /models
+  /schemas
+  /services
+  /utils
+  /auth
+  /admin
+config.py
+run.py
+
+Explain Flask Blueprints organization.
+
+Blueprints should include:
+
+auth_bp
+products_bp
+cart_bp
+orders_bp
+reviews_bp
+admin_bp
+
+Describe routes for:
+
+Authentication
+Product management
+Cart operations
+Order processing
+Reviews
+Admin management
+
+---
+
+# 4. Database Schema
+
+Design PostgreSQL tables.
+
+Users
+
+* id
+* name
+* email
+* password_hash
+* role (user/admin)
+* created_at
+
+Products
+
+* id
+* name
+* description
+* brand
+* price
+* created_at
+
+ProductVariants
+
+* id
+* product_id
+* size
+* color
+* stock_quantity
+
+Cart
+
+* id
+* user_id
+
+CartItems
+
+* id
+* cart_id
+* product_variant_id
+* quantity
+
+Orders
+
+* id
+* user_id
+* total_price
+* payment_status
+* order_status
+* upi_reference
+* payment_screenshot
+* created_at
+
+OrderItems
+
+* id
+* order_id
+* product_variant_id
+* quantity
+* price
+
+Reviews
+
+* id
+* product_id
+* user_id
+* rating
+* comment
+
+Define relationships and foreign keys.
+
+Example:
+
+Products → ProductVariants (1:N)
+Users → Orders (1:N)
+Orders → OrderItems (1:N)
+
+---
+
+# 5. REST API Specification
+
+Authentication
+
+POST /auth/register
+POST /auth/login
+GET /auth/me
+
+Products
+
+GET /products
+GET /products/{id}
+GET /products/search
+
+Cart
+
+GET /cart
+POST /cart/add
+PUT /cart/update
+DELETE /cart/remove
+
+Orders
+
+POST /orders
+GET /orders
+GET /orders/{id}
+
+Reviews
+
+POST /reviews
+GET /products/{id}/reviews
+
+Admin
+
+POST /admin/products
+PUT /admin/products/{id}
+DELETE /admin/products/{id}
+GET /admin/orders
+PUT /admin/orders/{id}/status
+PUT /admin/orders/{id}/verify-payment
+GET /admin/users
+
+Provide example request and response formats.
+
+---
+
+# 6. Authentication & Security
+
+Explain:
+
+* JWT authentication
+* Password hashing using bcrypt
+* Role-based access control (admin vs user)
+* Input validation
+* API rate limiting
+* Admin route protection
+
+---
+
+# 7. UPI Payment Flow
+
+Design a payment system using UPI.
+
+Flow:
+
+1. User places order
+2. System creates order with `payment_status = pending`
+3. User sees payment instructions with UPI ID
+4. User pays via UPI app
+5. User submits:
+
+   * UPI reference ID
+   * optional payment screenshot
+6. Admin verifies payment
+7. Admin updates order `payment_status = paid`
+8. Order status changes to processing
+
+Define database fields needed for UPI reference tracking.
+
+---
+
+# 8. Product Data Source (Pre-Existing JSON Dataset)
+
+Product images and product information are already stored in an external **JSON dataset**.
+The backend will **not handle image uploads**.
+
+The JSON dataset contains:
+* brand details
+* product details
+* product images
+* variants (sizes, colors)
+* pricing
+
+Example JSON structure:
+refer /home/dhir4j/Documents/RajWorks/SOLESTREET-SHOES/scraper/superkicks_data.json
+
+Backend responsibilities:
+
+* Import JSON dataset into PostgreSQL database
+* Store image URLs in the `products` or `product_images` table
+* Store variant data in `product_variants`
+
+
+Dont save any data from the server directly use this data json file. 
+
+---
+
+# 9. PythonAnywhere Deployment
+
+Explain:
+
+* Flask WSGI configuration
+* Environment variables
+* Database connection configuration
+* Static file handling
+* Domain routing
+
+Example architecture:
+
+Internet → PythonAnywhere WSGI → Flask App → PostgreSQL
+
+---
+
+# 10. Environment Variables
+
+Define:
+
+DATABASE_URL
+JWT_SECRET
+UPI_ID
+ADMIN_EMAIL
+UPLOAD_FOLDER
+
+---
+
+# 11. Logging
+
+Define backend logging for:
+
+* API requests
+* Errors
+* Order creation
+* Payment verification
+* Admin actions
+
+Use structured logging.
+
+---
+
+# 12. Testing Strategy
+
+Define:
+
+Backend
+
+* unit tests (pytest)
+* API integration tests
+
+Frontend
+
+* component tests
+* page tests
+
+Test critical flows:
+
+Login
+Add to cart
+Checkout
+Order creation
+Payment submission
+
+---
+
+# 13. Development Workflow
+
+Define:
+
+Git repository structure.
+
+Example:
+
+frontend/
+backend/
+
+Branching strategy:
+
+main → production
+dev → development
+feature/* → new features
+
+Workflow:
+
+Feature branch → Pull request → Code review → Merge to dev → Production release.
+
+---
+
+The output should be a **structured technical document detailed enough for a development team to start implementation immediately**, including both **User Panel and Admin Panel functionality**.

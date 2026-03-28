@@ -1,0 +1,263 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ── Typography ── */
+  --font-display: "Outfit", ui-sans-serif, system-ui;
+  --font-sans: "Figtree", ui-sans-serif, system-ui;
+  --font-mono: "Space Mono", ui-monospace;
+
+  /* ── Palette — Bold modern retail ── */
+  --color-bg:       #FAFAF8;
+  --color-ink:      #0C0C0C;
+  --color-accent:   #E11D48;
+  --color-surface:  #F1F0EE;
+  --color-border:   #E0DFDC;
+  --color-muted:    #78716C;
+  --color-card-bg:  #F5F4F2;
+
+  /* ── Tailwind color aliases ── */
+  --color-primary:              #0C0C0C;
+  --color-primary-foreground:   #FAFAF8;
+  --color-secondary:            #E11D48;
+  --color-background:           #FAFAF8;
+  --color-foreground:           #0C0C0C;
+  --color-muted-foreground:     #78716C;
+}
+
+/* ── Base ── */
+:root {
+  --background: #FAFAF8;
+  --foreground: #0C0C0C;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Figtree", ui-sans-serif, system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Outfit", ui-sans-serif, system-ui;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #F1F0EE; }
+::-webkit-scrollbar-thumb { background: #D1D0CD; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #0C0C0C; }
+
+/* ── Selection ── */
+::selection {
+  background: #E11D48;
+  color: #FAFAF8;
+}
+
+/* ── Utility classes ── */
+.font-display  { font-family: "Outfit", ui-sans-serif, system-ui; }
+.font-mono-num { font-family: "Space Mono", ui-monospace; }
+
+/* Card */
+.product-card {
+  background: #FAFAF8;
+  border: 1px solid #E0DFDC;
+  border-radius: 12px;
+  transition: border-color 200ms, transform 250ms ease, box-shadow 250ms ease;
+  overflow: hidden;
+}
+.product-card:hover {
+  border-color: #0C0C0C;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(12,12,12,0.08);
+}
+
+/* Input base */
+.input-base {
+  background: #F1F0EE;
+  border: 1.5px solid #E0DFDC;
+  border-radius: 8px;
+  color: #0C0C0C;
+  font-family: "Figtree", ui-sans-serif, system-ui;
+  outline: none;
+  transition: border-color 200ms;
+}
+.input-base:focus {
+  border-color: #E11D48;
+}
+.input-base::placeholder { color: #78716C; }
+
+/* Pill button */
+.btn-primary {
+  background: #0C0C0C;
+  color: #FAFAF8;
+  font-family: "Outfit", ui-sans-serif, system-ui;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  transition: background 200ms, opacity 200ms, transform 150ms;
+}
+.btn-primary:hover { background: #1F1F1F; transform: translateY(-1px); }
+.btn-primary:active { opacity: 0.9; transform: translateY(0); }
+
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid #0C0C0C;
+  color: #0C0C0C;
+  font-family: "Outfit", ui-sans-serif, system-ui;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  transition: background 200ms, color 200ms;
+}
+.btn-outline:hover {
+  background: #0C0C0C;
+  color: #FAFAF8;
+}
+
+/* Section divider */
+.divider {
+  height: 1px;
+  background: #E0DFDC;
+  width: 100%;
+}
+
+/* Grain overlay — subtle texture */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: -200%;
+  width: 400%;
+  height: 400%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.data-table th {
+  font-family: "Outfit", ui-sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #78716C;
+  border-bottom: 2px solid #0C0C0C;
+  padding: 10px 16px;
+  text-align: left;
+}
+.data-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #E0DFDC;
+  font-size: 14px;
+}
+.data-table tr:hover td { background: #F1F0EE; }
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-family: "Space Mono", ui-monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Stat card */
+.stat-card {
+  background: #F1F0EE;
+  border: 1px solid #E0DFDC;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card::before {
+  content: attr(data-number);
+  position: absolute;
+  top: -12px;
+  right: 16px;
+  font-family: "Outfit", ui-sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  color: #E0DFDC;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Hide scrollbar */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Page transition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter { animation: fadeIn 0.4s ease-out; }
+
+/* Marquee scroll */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── Mobile UX ── */
+
+a, button, [role="button"], label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  touch-action: manipulation;
+}
+
+@media (max-width: 767px) {
+  .mobile-filter-sheet {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+.overflow-y-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Product card — no hover lift on touch */
+@media (hover: none) and (pointer: coarse) {
+  .product-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: #E0DFDC;
+  }
+}
+
+/* Section tab active indicator */
+.section-tab-active {
+  position: relative;
+}
+.section-tab-active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #E11D48;
+  border-radius: 1px;
+}
