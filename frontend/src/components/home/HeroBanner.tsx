@@ -45,9 +45,8 @@ function MobileHero({ categories }: { categories: CategoryEntry[] }) {
         <div className="mb-4">
           <p className="text-[11px] tracking-[0.4em] uppercase text-[#78716C] mb-3" style={{ fontFamily: 'Space Mono' }}>Welcome to</p>
           <h1 style={{ fontFamily: 'Outfit', fontWeight: 900, fontSize: 'clamp(44px, 14vw, 80px)', letterSpacing: '-0.04em', lineHeight: 0.9 }} className="text-[#0C0C0C] uppercase">
-            Avik<br />
-            <span style={{ fontWeight: 200, letterSpacing: '-0.02em' }} className="text-[#0C0C0C]/40">E</span>
-            <span style={{ fontWeight: 200, letterSpacing: '-0.02em' }} className="text-[#E11D48]">retail</span>
+            Purality<br />
+            <span style={{ fontWeight: 200, letterSpacing: '-0.02em' }} className="text-[#E11D48]">Online</span>
           </h1>
         </div>
 
@@ -187,11 +186,10 @@ function DesktopHero({ categories }: { categories: CategoryEntry[] }) {
               {/* Brand typography — horizontal mixed weight */}
               <h1 className="uppercase text-[#0C0C0C] select-none" style={{ fontFamily: 'Outfit', lineHeight: 0.88 }}>
                 <span style={{ fontWeight: 900, fontSize: 'clamp(80px, 11vw, 160px)', letterSpacing: '-0.05em', display: 'block' }}>
-                  Avik
+                  Purality
                 </span>
                 <span className="flex items-baseline" style={{ fontSize: 'clamp(80px, 11vw, 160px)', letterSpacing: '-0.03em' }}>
-                  <span style={{ fontWeight: 200 }} className="text-[#0C0C0C]/30">E</span>
-                  <span style={{ fontWeight: 200 }} className="text-[#E11D48]">retail</span>
+                  <span style={{ fontWeight: 200 }} className="text-[#E11D48]">Online</span>
                 </span>
               </h1>
 

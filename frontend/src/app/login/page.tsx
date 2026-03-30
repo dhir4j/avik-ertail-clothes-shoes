@@ -55,7 +55,7 @@ function LoginForm() {
       <div className="hidden lg:flex w-1/2 bg-[#0C0C0C] flex-col justify-between p-16">
         <Link href="/" className="text-[#FAFAF8]">
           <span className="text-2xl font-black uppercase tracking-tighter" style={{ fontFamily: 'Outfit', fontWeight: 800, letterSpacing: '-0.04em' }}>
-            AVIK ERETAIL
+            PuralityOnline
           </span>
         </Link>
 
@@ -96,7 +96,7 @@ function LoginForm() {
       <div className="flex-1 flex flex-col justify-center px-8 md:px-16 lg:px-20 py-12">
         <div className="lg:hidden mb-8">
           <Link href="/" className="text-xl font-black uppercase tracking-tighter" style={{ fontFamily: 'Outfit', fontWeight: 800 }}>
-            AVIK ERETAIL
+            PuralityOnline
           </Link>
         </div>
 
@@ -177,7 +177,7 @@ function LoginForm() {
           </form>
 
           <p className="text-[13px] text-[#78716C] mt-6 text-center" style={{ fontFamily: 'Figtree' }}>
-            New to AVIK ERETAIL?{' '}
+            New to PuralityOnline?{' '}
             <Link href="/register" className="text-[#0C0C0C] font-bold hover:text-[#E11D48] transition-colors">
               Create an account →
             </Link>

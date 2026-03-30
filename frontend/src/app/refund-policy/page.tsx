@@ -69,7 +69,7 @@ export default function RefundPolicyPage() {
         <H2>4. How to Initiate a Return</H2>
         <ol className="mb-4 space-y-2">
           {[
-            'Email us at contact@avikeretail.com or call 9625616800 with your order ID and reason for return.',
+            'Email us at contact@puralityonline.com or call 9625616800 with your order ID and reason for return.',
             'Our team will respond within 24 hours with pickup scheduling.',
             'Pack the item securely in original packaging. We will arrange a courier pickup.',
             'Once the item is received and inspected, refund will be processed within 3–5 business days.',
@@ -84,7 +84,7 @@ export default function RefundPolicyPage() {
         <H2>5. Refund Methods</H2>
         <ul className="mb-4 space-y-1">
           <Li>Original payment method (UPI, card, wallet) — standard refund timeline: 3–5 business days</Li>
-          <Li>Store credit (AVIK ERETAIL wallet) — available immediately upon return approval</Li>
+          <Li>Store credit (PuralityOnline wallet) — available immediately upon return approval</Li>
           <Li>Bank transfer — for orders paid via cash or where original payment method is unavailable</Li>
         </ul>
 
@@ -96,9 +96,9 @@ export default function RefundPolicyPage() {
 
         <H2>8. Contact for Returns</H2>
         <div className="border border-[#E0DFDC] p-5 text-[13px] space-y-1" style={{ fontFamily: 'Space Mono' }}>
-          <p className="font-bold text-[#0C0C0C]">Returns &amp; Refunds — AVIK ERETAIL</p>
+          <p className="font-bold text-[#0C0C0C]">Returns &amp; Refunds — PuralityOnline</p>
           <p className="text-[#78716C]">RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, New Delhi — 110045</p>
-          <p><a href="mailto:contact@avikeretail.com" className="text-[#E11D48] hover:underline">contact@avikeretail.com</a></p>
+          <p><a href="mailto:contact@puralityonline.com" className="text-[#E11D48] hover:underline">contact@puralityonline.com</a></p>
           <p><a href="tel:9625616800" className="text-[#E11D48] hover:underline">9625616800</a> — Available Mon–Sat, 10 AM to 7 PM</p>
         </div>
 

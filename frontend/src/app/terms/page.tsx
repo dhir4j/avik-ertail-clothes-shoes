@@ -22,14 +22,14 @@ export default function TermsPage() {
       </div>
 
       <div className="max-w-[860px] mx-auto px-6 pb-20">
-        <P>By accessing and using the AVIK ERETAIL website (avikeretail.in) and purchasing our products, you agree to be bound by these Terms and Conditions. Please read them carefully before placing an order.</P>
+        <P>By accessing and using the PuralityOnline website (puralityonline.in) and purchasing our products, you agree to be bound by these Terms and Conditions. Please read them carefully before placing an order.</P>
 
         <H2>1. About Us</H2>
-        <P>AVIK ERETAIL (OPC) PRIVATE LIMITED is a registered company in India operating an authenticated sneaker retail platform. Our registered address is RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, Dabri, New Delhi — 110045.</P>
+        <P>PuralityOnline Pvt Ltd is a registered company in India operating an authenticated sneaker retail platform. Our registered address is RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, Dabri, New Delhi — 110045.</P>
 
         <H2>2. Products and Authenticity</H2>
         <ul className="mb-4 space-y-1">
-          <Li>All products listed on AVIK ERETAIL are authenticated prior to listing and sale.</Li>
+          <Li>All products listed on PuralityOnline are authenticated prior to listing and sale.</Li>
           <Li>Product images and descriptions are provided for reference. Minor variations in colour may occur due to photography conditions.</Li>
           <Li>All sizes are listed in UK sizing unless otherwise specified.</Li>
           <Li>We reserve the right to cancel or refuse any order at our discretion, including suspected fraudulent orders.</Li>
@@ -49,7 +49,7 @@ export default function TermsPage() {
           <Li>Delivery timelines vary by location: 2–5 business days for most metros, up to 7 days for other areas.</Li>
           <Li>Free shipping on orders above ₹2,000. Shipping charges apply below this threshold.</Li>
           <Li>Risk of loss transfers to the buyer upon dispatch. We provide tracking information for all shipments.</Li>
-          <Li>AVIK ERETAIL is not responsible for delays caused by courier partners or unforeseen circumstances.</Li>
+          <Li>PuralityOnline is not responsible for delays caused by courier partners or unforeseen circumstances.</Li>
         </ul>
 
         <H2>5. Returns and Refunds</H2>
@@ -69,19 +69,19 @@ export default function TermsPage() {
         </ul>
 
         <H2>7. Intellectual Property</H2>
-        <P>All content on this website — including brand name, logo, product descriptions, photographs, and design — is the property of AVIK ERETAIL (OPC) PRIVATE LIMITED or its licensors. You may not reproduce, distribute, or create derivative works without written permission.</P>
+        <P>All content on this website — including brand name, logo, product descriptions, photographs, and design — is the property of PuralityOnline Pvt Ltd or its licensors. You may not reproduce, distribute, or create derivative works without written permission.</P>
 
         <H2>8. Limitation of Liability</H2>
-        <P>AVIK ERETAIL&apos;s liability is limited to the purchase price of the product in question. We are not liable for indirect, incidental, or consequential damages arising from use of our platform or products.</P>
+        <P>PuralityOnline&apos;s liability is limited to the purchase price of the product in question. We are not liable for indirect, incidental, or consequential damages arising from use of our platform or products.</P>
 
         <H2>9. Governing Law</H2>
         <P>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of courts in New Delhi.</P>
 
         <H2>10. Contact</H2>
         <div className="border border-[#E0DFDC] p-5 text-[13px] space-y-1" style={{ fontFamily: 'Space Mono' }}>
-          <p className="font-bold text-[#0C0C0C]">AVIK ERETAIL (OPC) PRIVATE LIMITED</p>
+          <p className="font-bold text-[#0C0C0C]">PuralityOnline Pvt Ltd</p>
           <p className="text-[#78716C]">RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, New Delhi — 110045</p>
-          <p><a href="mailto:contact@avikeretail.com" className="text-[#E11D48] hover:underline">contact@avikeretail.com</a></p>
+          <p><a href="mailto:contact@puralityonline.com" className="text-[#E11D48] hover:underline">contact@puralityonline.com</a></p>
           <p><a href="tel:9625616800" className="text-[#E11D48] hover:underline">9625616800</a></p>
         </div>
 

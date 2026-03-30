@@ -83,10 +83,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-baseline gap-1 flex-shrink-0 group mr-8">
             <span className="text-xl font-extrabold uppercase tracking-tight text-[#0C0C0C] leading-none" style={{ fontFamily: 'Outfit', fontWeight: 800, letterSpacing: '-0.02em' }}>
-              AVIK
+              PURALITY
             </span>
             <span className="text-xl font-light uppercase tracking-tight text-[#0C0C0C]/60 leading-none" style={{ fontFamily: 'Outfit', fontWeight: 300, letterSpacing: '-0.02em' }}>
-              ERETAIL
+              ONLINE
             </span>
           </Link>
 
@@ -426,8 +426,8 @@ export default function Navbar() {
           <div className="relative ml-auto w-72 h-full bg-[#FAFAF8] flex flex-col overflow-y-auto">
             <div className="flex items-center justify-between px-5 py-4 border-b border-[#E0DFDC]">
               <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-baseline gap-1">
-                <span className="text-lg font-extrabold uppercase tracking-tight" style={{ fontFamily: 'Outfit', fontWeight: 800 }}>AVIK</span>
-                <span className="text-lg font-light uppercase tracking-tight text-[#0C0C0C]/60" style={{ fontFamily: 'Outfit', fontWeight: 300 }}>ERETAIL</span>
+                <span className="text-lg font-extrabold uppercase tracking-tight" style={{ fontFamily: 'Outfit', fontWeight: 800 }}>PURALITY</span>
+                <span className="text-lg font-light uppercase tracking-tight text-[#0C0C0C]/60" style={{ fontFamily: 'Outfit', fontWeight: 300 }}>ONLINE</span>
               </Link>
               <button onClick={() => setMobileOpen(false)} className="p-1 rounded-lg hover:bg-[#F1F0EE] transition-colors"><X className="w-5 h-5" /></button>
             </div>

@@ -3,9 +3,9 @@ import NewsletterForm from '@/components/home/NewsletterForm';
 import { getSectionCategoryMap } from '@/lib/data';
 
 const COMPANY = {
-  name: 'AVIK ERETAIL (OPC) PRIVATE LIMITED',
+  name: 'PuralityOnline Pvt Ltd',
   phone: '9625616800',
-  email: 'contact@avikeretail.com',
+  email: 'contact@puralityonline.com',
   address: 'RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, Dabri, New Delhi — 110045',
 };
 
@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="md:col-span-3">
               <Link href="/" className="inline-block mb-4">
                 <span className="text-2xl font-black uppercase tracking-tighter text-[#F0EDE8]" style={{ fontFamily: 'Outfit', fontWeight: 800, letterSpacing: '-0.04em' }}>
-                  AVIK ERETAIL
+                  PuralityOnline
                 </span>
               </Link>
               <p className="text-[#6B6862] text-[12px] leading-relaxed mb-5" style={{ fontFamily: 'Figtree' }}>
@@ -144,7 +144,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="max-w-[1440px] mx-auto px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <p className="text-[10px] text-[#3A3936]" style={{ fontFamily: 'Space Mono' }}>
-          &copy; {new Date().getFullYear()} AVIK ERETAIL (OPC) PRIVATE LIMITED &middot; ALL RIGHTS RESERVED
+          &copy; {new Date().getFullYear()} PuralityOnline Pvt Ltd &middot; ALL RIGHTS RESERVED
         </p>
         <div className="flex flex-wrap gap-5">
           {[

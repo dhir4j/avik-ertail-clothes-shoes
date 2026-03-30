@@ -3,20 +3,20 @@ import ClientLayout from "@/components/layout/ClientLayout";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AVIK ERETAIL — Fashion & Footwear Destination",
+  title: "PuralityOnline — Fashion & Footwear Destination",
   description: "India's curated multi-category retail destination. Premium footwear and wholesale clothing — authenticated, affordable, delivered.",
-  metadataBase: new URL("https://www.avikeretail.com"),
+  metadataBase: new URL("https://www.puralityonline.com"),
   openGraph: {
-    title: "AVIK ERETAIL — Fashion & Footwear Destination",
+    title: "PuralityOnline — Fashion & Footwear Destination",
     description: "India's curated multi-category retail destination. Premium footwear and wholesale clothing — authenticated, affordable, delivered.",
-    url: "https://www.avikeretail.com",
-    siteName: "AVIK ERETAIL",
+    url: "https://www.puralityonline.com",
+    siteName: "PuralityOnline",
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AVIK ERETAIL — Fashion & Footwear Destination",
+    title: "PuralityOnline — Fashion & Footwear Destination",
     description: "India's curated multi-category retail destination. Premium footwear and wholesale clothing.",
   },
 };

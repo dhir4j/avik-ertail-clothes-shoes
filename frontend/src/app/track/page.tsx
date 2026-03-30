@@ -347,7 +347,7 @@ export default function TrackPage() {
                   <div className="flex gap-3 text-[11px]" style={{ fontFamily: 'Space Mono' }}>
                     <a href="tel:9625616800" className="text-[#E11D48] hover:underline font-bold">9625616800</a>
                     <span className="text-[#E0DFDC]">·</span>
-                    <a href="mailto:contact@avikeretail.com" className="text-[#E11D48] hover:underline font-bold">contact@avikeretail.com</a>
+                    <a href="mailto:contact@puralityonline.com" className="text-[#E11D48] hover:underline font-bold">contact@puralityonline.com</a>
                   </div>
                 </div>
               </>

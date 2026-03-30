@@ -494,7 +494,7 @@ export default function Home() {
                 ALWAYS.
               </h2>
               <p className="text-[#78716C] text-sm sm:text-base leading-relaxed max-w-md" style={{ fontFamily: 'Figtree', fontWeight: 300 }}>
-                AVIK ERETAIL is your trusted multi-category retailer. Every product that enters our warehouse goes through a rigorous quality verification process before it ever ships. No exceptions.
+                PuralityOnline is your trusted multi-category retailer. Every product that enters our warehouse goes through a rigorous quality verification process before it ever ships. No exceptions.
               </p>
               <Link
                 href="/products"

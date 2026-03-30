@@ -221,7 +221,7 @@ export default function AdminPage() {
       <div className="bg-[#0C0C0C] border-b border-[#1F1F1F]">
         <div className="max-w-[1440px] mx-auto px-6 h-[60px] flex items-center justify-between">
           <div className="flex items-center gap-5">
-            <Link href="/" className="text-[#FAFAF8] text-lg font-black uppercase tracking-tighter" style={{ fontFamily: 'Outfit', fontWeight: 800, letterSpacing: '-0.04em' }}>AVIK ERETAIL</Link>
+            <Link href="/" className="text-[#FAFAF8] text-lg font-black uppercase tracking-tighter" style={{ fontFamily: 'Outfit', fontWeight: 800, letterSpacing: '-0.04em' }}>PuralityOnline</Link>
             <span className="text-[9px] font-bold tracking-[0.15em] uppercase text-[#E11D48] border border-[#E11D48] px-2 py-0.5" style={{ fontFamily: 'Space Mono' }}>Admin</span>
             {pendingCount > 0 && (
               <div className="flex items-center gap-1.5 text-[11px] text-[#E03A1E]" style={{ fontFamily: 'Space Mono' }}>

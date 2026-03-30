@@ -58,7 +58,7 @@ export default function RegisterPage() {
       <div className="hidden lg:flex w-1/2 bg-[#0C0C0C] flex-col justify-between p-16">
         <Link href="/" className="text-[#FAFAF8]">
           <span className="text-2xl font-black uppercase tracking-tighter" style={{ fontFamily: 'Outfit', fontWeight: 800, letterSpacing: '-0.04em' }}>
-            AVIK ERETAIL
+            PuralityOnline
           </span>
         </Link>
 
@@ -97,7 +97,7 @@ export default function RegisterPage() {
       <div className="flex-1 flex flex-col justify-center px-8 md:px-16 lg:px-20 py-12">
         <div className="lg:hidden mb-8">
           <Link href="/" className="text-xl font-black uppercase tracking-tighter" style={{ fontFamily: 'Outfit', fontWeight: 800 }}>
-            AVIK ERETAIL
+            PuralityOnline
           </Link>
         </div>
 
@@ -106,7 +106,7 @@ export default function RegisterPage() {
             Create account
           </p>
           <h2 className="text-3xl font-black uppercase tracking-tight text-[#0C0C0C] mb-8" style={{ fontFamily: 'Outfit', fontWeight: 800 }}>
-            Join AVIK ERETAIL
+            Join PuralityOnline
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-5">

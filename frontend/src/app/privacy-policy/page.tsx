@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
       </div>
 
       <div className="max-w-[860px] mx-auto px-6 pb-20">
-        <P>This Privacy Policy describes how AVIK ERETAIL (OPC) PRIVATE LIMITED (&ldquo;AVIK ERETAIL,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and shares information about you when you use our website at avikeretail.in and related services.</P>
+        <P>This Privacy Policy describes how PuralityOnline Pvt Ltd (&ldquo;PuralityOnline,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and shares information about you when you use our website at puralityonline.in and related services.</P>
 
         <H2>1. Information We Collect</H2>
         <P>We collect information you provide directly to us, such as when you create an account, place an order, or contact us for support:</P>
@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
         <P>We retain your personal information for as long as necessary to fulfil the purposes outlined in this policy, comply with legal obligations, and resolve disputes. Order records are retained for a minimum of 7 years as required under Indian accounting laws.</P>
 
         <H2>5. Your Rights</H2>
-        <P>You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at contact@avikeretail.com. We will respond within 30 days.</P>
+        <P>You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at contact@puralityonline.com. We will respond within 30 days.</P>
 
         <H2>6. Cookies</H2>
         <P>We use essential cookies to operate our website (session management, cart functionality). We do not use tracking cookies for advertising purposes without your consent.</P>
@@ -68,9 +68,9 @@ export default function PrivacyPolicyPage() {
         <H2>8. Contact</H2>
         <P>For privacy-related queries, contact us at:</P>
         <div className="border border-[#E0DFDC] p-5 text-[13px] space-y-1" style={{ fontFamily: 'Space Mono' }}>
-          <p className="font-bold text-[#0C0C0C]">AVIK ERETAIL (OPC) PRIVATE LIMITED</p>
+          <p className="font-bold text-[#0C0C0C]">PuralityOnline Pvt Ltd</p>
           <p className="text-[#78716C]">RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, New Delhi — 110045</p>
-          <p><a href="mailto:contact@avikeretail.com" className="text-[#E11D48] hover:underline">contact@avikeretail.com</a></p>
+          <p><a href="mailto:contact@puralityonline.com" className="text-[#E11D48] hover:underline">contact@puralityonline.com</a></p>
           <p><a href="tel:9625616800" className="text-[#E11D48] hover:underline">9625616800</a></p>
         </div>
 

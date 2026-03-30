@@ -221,9 +221,9 @@ function InvoicesContent() {
                   <div className="p-4 sm:p-8 border-b border-[#E0DFDC]">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6">
                       <div>
-                        <h2 className="text-2xl font-black uppercase tracking-tighter text-[#0C0C0C]" style={{ fontFamily: 'Outfit', fontWeight: 800 }}>AVIK ERETAIL</h2>
+                        <h2 className="text-2xl font-black uppercase tracking-tighter text-[#0C0C0C]" style={{ fontFamily: 'Outfit', fontWeight: 800 }}>PuralityOnline</h2>
                         <p className="text-[11px] text-[#78716C] mt-0.5" style={{ fontFamily: 'Figtree' }}>India's Premium Authenticated Sneaker Boutique</p>
-                        <p className="text-[12px] text-[#6B6B6B] mt-2" style={{ fontFamily: 'Figtree' }}>orders@avikeretailshoes.com</p>
+                        <p className="text-[12px] text-[#6B6B6B] mt-2" style={{ fontFamily: 'Figtree' }}>orders@puralityonline.com</p>
                       </div>
                       <div className="sm:text-right">
                         <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#78716C] mb-1" style={{ fontFamily: 'Space Mono' }}>Tax Invoice</p>
