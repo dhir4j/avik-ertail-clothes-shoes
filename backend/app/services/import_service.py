@@ -134,3 +134,4 @@ def import_products(dataset_path, initial_stock=0, force_stock=False):
     db.session.commit()
     logger.info("Import complete: %s", stats)
     return stats
+

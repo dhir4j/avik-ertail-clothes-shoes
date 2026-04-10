@@ -1,9 +1,10 @@
 from flask import Blueprint, request, g
 from app.auth.decorators import admin_required
 from app.schemas.admin import validate_order_status_update, validate_payment_verification, validate_inventory_update
-from app.schemas.product import validate_product_update
+from app.schemas.product import validate_product_create, validate_product_update
 from app.services.admin_service import (
     list_all_products,
+    create_product,
     update_product_metadata,
     soft_delete_product,
     list_all_orders,
@@ -40,6 +41,21 @@ def products_list():
         brand=request.args.get("brand"),
     )
     return success_response(data, meta)
+
+
+@admin_bp.route("/products", methods=["POST"])
+@admin_required
+def products_create():
+    data = request.get_json(silent=True) or {}
+    errors = validate_product_create(data)
+    if errors:
+        return error_response("Validation failed", 400, "VALIDATION_ERROR", errors)
+
+    try:
+        result = create_product(data, g.current_user.id)
+    except Exception as e:
+        return error_response(str(e), 500, "CREATE_ERROR")
+    return success_response(result)
 
 
 @admin_bp.route("/products/<int:product_id>", methods=["PUT"])
