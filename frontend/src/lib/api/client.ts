@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://server.puralityonline.com';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://server.pluralityonline.com';
 
 export const apiClient = axios.create({
     baseURL: API_BASE_URL,
