@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useAuthStore } from '@/store/auth-store';
@@ -17,16 +17,19 @@ function LoginForm() {
   const setAuth = useAuthStore(s => s.setAuth);
   const user = useAuthStore(s => s.user);
 
-  if (user) {
-    router.replace(user.role === 'admin' ? '/admin' : redirect);
-    return null;
-  }
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPw, setShowPw] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+
+  useEffect(() => {
+    if (user) {
+      router.replace(user.role === 'admin' ? '/admin' : redirect);
+    }
+  }, [user, router, redirect]);
+
+  if (user) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
