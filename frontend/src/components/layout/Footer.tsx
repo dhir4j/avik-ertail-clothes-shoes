@@ -6,7 +6,7 @@ const COMPANY = {
   name: 'PuralityOnline Pvt Ltd',
   phone: '9625616800',
   email: 'contact@puralityonline.com',
-  address: 'RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, Dabri, New Delhi — 110045',
+  address: 'Plot No: 385/2522/3931, Floor - 02, Near Koel Campus, TBS Workspace, Nandan Kanan Road, Patia, Bhubaneswar, Khordha 751024',
 };
 
 export default function Footer() {

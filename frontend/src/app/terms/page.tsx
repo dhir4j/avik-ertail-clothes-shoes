@@ -25,7 +25,7 @@ export default function TermsPage() {
         <P>By accessing and using the PuralityOnline website (puralityonline.in) and purchasing our products, you agree to be bound by these Terms and Conditions. Please read them carefully before placing an order.</P>
 
         <H2>1. About Us</H2>
-        <P>PuralityOnline Pvt Ltd is a registered company in India operating an authenticated sneaker retail platform. Our registered address is RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, Dabri, New Delhi — 110045.</P>
+        <P>PuralityOnline Pvt Ltd is a registered company in India operating an authenticated sneaker retail platform. Our registered address is Plot No: 385/2522/3931, Floor - 02, Near Koel Campus, TBS Workspace, Nandan Kanan Road, Patia, Bhubaneswar, Khordha 751024.</P>
 
         <H2>2. Products and Authenticity</H2>
         <ul className="mb-4 space-y-1">
@@ -75,12 +75,12 @@ export default function TermsPage() {
         <P>PuralityOnline&apos;s liability is limited to the purchase price of the product in question. We are not liable for indirect, incidental, or consequential damages arising from use of our platform or products.</P>
 
         <H2>9. Governing Law</H2>
-        <P>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of courts in New Delhi.</P>
+        <P>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of courts in Bhubaneswar.</P>
 
         <H2>10. Contact</H2>
         <div className="border border-[#E0DFDC] p-5 text-[13px] space-y-1" style={{ fontFamily: 'Space Mono' }}>
           <p className="font-bold text-[#0C0C0C]">PuralityOnline Pvt Ltd</p>
-          <p className="text-[#78716C]">RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, New Delhi — 110045</p>
+          <p className="text-[#78716C]">Plot No: 385/2522/3931, Floor - 02, Near Koel Campus, TBS Workspace, Nandan Kanan Road, Patia, Bhubaneswar, Khordha 751024</p>
           <p><a href="mailto:contact@puralityonline.com" className="text-[#E11D48] hover:underline">contact@puralityonline.com</a></p>
           <p><a href="tel:9625616800" className="text-[#E11D48] hover:underline">9625616800</a></p>
         </div>

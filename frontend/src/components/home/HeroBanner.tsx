@@ -37,7 +37,7 @@ function MobileHero({ categories }: { categories: CategoryEntry[] }) {
         <div className="flex items-center gap-2.5 mb-10">
           <span className="h-[2px] w-5 bg-[#E11D48]" />
           <span className="text-[9px] tracking-[0.3em] uppercase text-[#E11D48] font-bold" style={{ fontFamily: 'Space Mono' }}>
-            New Delhi · India
+            Bhubaneswar · India
           </span>
         </div>
 

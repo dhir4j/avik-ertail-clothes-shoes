@@ -62,7 +62,7 @@ export default function AboutPage() {
 
         <Section n="01" title="Our Story">
           <p className="mb-4">
-            PuralityOnline Pvt Ltd started in New Delhi with a simple mission: bring curated, quality fashion and footwear to Indian consumers with complete transparency and authenticity.
+            PuralityOnline Pvt Ltd started in Bhubaneswar with a simple mission: bring curated, quality fashion and footwear to Indian consumers with complete transparency and authenticity.
           </p>
           <p className="mb-4">
             The Indian retail market needed a destination that combined premium footwear with quality wholesale clothing — all verified, fairly priced, and delivered to your doorstep. We decided to build that.
@@ -102,7 +102,7 @@ export default function AboutPage() {
         <Section n="04" title="Contact Us">
           <div className="space-y-2 text-[13px]" style={{ fontFamily: 'Space Mono' }}>
             <p><span className="text-[#78716C]">Company —</span> PuralityOnline Pvt Ltd</p>
-            <p><span className="text-[#78716C]">Address —</span> RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, Dabri, New Delhi — 110045</p>
+            <p><span className="text-[#78716C]">Address —</span> Plot No: 385/2522/3931, Floor - 02, Near Koel Campus, TBS Workspace, Nandan Kanan Road, Patia, Bhubaneswar, Khordha 751024</p>
             <p><span className="text-[#78716C]">Phone —</span> <a href="tel:9625616800" className="text-[#E11D48] hover:underline">9625616800</a></p>
             <p><span className="text-[#78716C]">Email —</span> <a href="mailto:contact@puralityonline.com" className="text-[#E11D48] hover:underline">contact@puralityonline.com</a></p>
           </div>

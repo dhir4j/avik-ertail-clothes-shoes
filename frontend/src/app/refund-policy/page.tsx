@@ -97,7 +97,7 @@ export default function RefundPolicyPage() {
         <H2>8. Contact for Returns</H2>
         <div className="border border-[#E0DFDC] p-5 text-[13px] space-y-1" style={{ fontFamily: 'Space Mono' }}>
           <p className="font-bold text-[#0C0C0C]">Returns &amp; Refunds — PuralityOnline</p>
-          <p className="text-[#78716C]">RZ-B-153, GF Shop No. 2, Kh No. 31/8, Dabri Extn, New Delhi — 110045</p>
+          <p className="text-[#78716C]">Plot No: 385/2522/3931, Floor - 02, Near Koel Campus, TBS Workspace, Nandan Kanan Road, Patia, Bhubaneswar, Khordha 751024</p>
           <p><a href="mailto:contact@puralityonline.com" className="text-[#E11D48] hover:underline">contact@puralityonline.com</a></p>
           <p><a href="tel:9625616800" className="text-[#E11D48] hover:underline">9625616800</a> — Available Mon–Sat, 10 AM to 7 PM</p>
         </div>

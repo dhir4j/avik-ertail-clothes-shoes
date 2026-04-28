@@ -1,0 +1,113 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777373305080,
+  "projectRoot": "/home/dhir4j/Documents/RajWorks/ECOM-RETAIL",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "backend": {
+      "path": "backend",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777373305069,
+      "keyFiles": [
+        "db.sql",
+        "prd.md",
+        "prompt.txt",
+        "pythonanywhere_wsgi.py",
+        "requirements.txt"
+      ]
+    },
+    "frontend": {
+      "path": "frontend",
+      "purpose": null,
+      "fileCount": 12,
+      "lastAccessed": 1777373305072,
+      "keyFiles": [
+        "README.md",
+        "eslint.config.mjs",
+        "favicon.ico",
+        "next-env.d.ts",
+        "next.config.ts"
+      ]
+    },
+    "scraper": {
+      "path": "scraper",
+      "purpose": null,
+      "fileCount": 12,
+      "lastAccessed": 1777373305072,
+      "keyFiles": [
+        "asics.html",
+        "brand.html",
+        "fix_json.py",
+        "nike.html",
+        "scraper.py"
+      ]
+    },
+    "backend/app": {
+      "path": "backend/app",
+      "purpose": "Application code",
+      "fileCount": 3,
+      "lastAccessed": 1777373305073,
+      "keyFiles": [
+        "__init__.py",
+        "config.py",
+        "extensions.py"
+      ]
+    },
+    "frontend/data": {
+      "path": "frontend/data",
+      "purpose": "Data files",
+      "fileCount": 3,
+      "lastAccessed": 1777373305073,
+      "keyFiles": [
+        "metro_data.json",
+        "shop4shops_data.json",
+        "superkicks_data.json"
+      ]
+    },
+    "frontend/node_modules": {
+      "path": "frontend/node_modules",
+      "purpose": "Dependencies",
+      "fileCount": 1,
+      "lastAccessed": 1777373305080,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "frontend/src",
+      "accessCount": 1,
+      "lastAccessed": 1777373353193,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}
